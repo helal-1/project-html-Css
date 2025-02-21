@@ -1,0 +1,80 @@
+header{
+    width: 98%;
+    margin: auto;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+nav img{
+    width: 60px;
+}
+nav .icon-menu{
+    position: relative;
+}
+nav .icon-menu .line-top{
+    display: flex;
+    width: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+nav .icon-menu .line-top span{
+    background-color: #333;
+    margin-bottom: 5px; 
+    height: 2px;
+}
+nav .icon-menu .line-top span:first-child{
+    width: 100%;
+}
+nav .icon-menu .line-top span:nth-child(2){
+    width: 50%;
+    transition: 0.3s;
+}
+nav .icon-menu .line-top:hover span:nth-child(2){
+width: 100%;
+}
+nav .icon-menu .line-top span:last-child{
+    width: 100%;
+}
+nav .icon-menu ul{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    transition: 0.3s;
+}
+nav .icon-menu:hover ul{
+    display: block;
+}
+nav .icon-menu ul li a{
+    display: block;
+    padding: 15px;
+    color: #333;
+    font-family: "Work Sans", serif;
+    transition: 0.3s;
+}
+nav .icon-menu ul li a:hover{
+    padding-left: 25px;
+}
+nav .icon-menu ul li:not(:last-child){
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+nav .icon-menu ul::before{
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    right: 5px;
+    top: -20px;
+}

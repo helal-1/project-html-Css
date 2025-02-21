@@ -1,0 +1,29 @@
+*{
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: color-mix(in srgb, var(--dark-color), transparent 40%);
+    font-size: .8em;
+}
+li {
+    list-style: none;
+    color: color-mix(in srgb, var(--dark-color), transparent 40%);
+}
+body {
+    font-family: "Noto Sans", serif;
+    
+}
+h1,h2,h3,h4,h5,h6 ,p{
+    font-family: "Work Sans", serif;
+} 
+span{
+    font-family: "Work Sans", serif;
+}
+p{
+    font-family: "Work Sans", serif;
+}
